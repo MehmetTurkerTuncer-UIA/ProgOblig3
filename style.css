@@ -1,0 +1,34 @@
+#canvas_sirkel{
+    width: 200px;
+    height: 100px;
+    border: 2px solid blue;
+}
+#canvas_rektangel{
+    width: 200px;
+    height: 100px;
+    border: 2px solid blue;
+}
+
+#svg_sirkel{
+    width: 200px;
+    height: 100px;
+    border: 2px solid green;
+}
+
+
+#svg_rektangel{
+    width: 200px;
+    height: 100px;
+    border: 2px solid green;
+}
+
+.canv{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.circle{
+    visibility: hidden;       
+}
