@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="canv">
+    <p>sirkel med CANVAS</p>
+    <canvas id="canvas_sirkel"></canvas>
+    <br>
+    <button id="knapp">tegne sirkel</button>
+    <p>klikk knappen</p>
+        </div>
+        <div class="canv">
+        <p>rektangel med CANVAS</p>
+        <canvas id="canvas_rektangel" ></canvas>
+        <br>
+        <button id="knapp1">tegne rektangel</button>
+        <p>klikk knappen</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div class="canv">
+    <p>sirkel med SVG</p>
+    <svg  id="svg_sirkel" >
+        <circle id="sirk" cx="100" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    <p>velg farge til sirkel</p>
+    <p>klikk knappen</p>
+    <select name="" id="chooseColors">
+        <option value="green">grønn</option>    
+        <option value="blue">blå</option>    
+        <option value="red">rød</option>    
+        <option value="yellow">gul</option>    
+    </select>
+    <input type="button" value="Change Colors" onclick="changeFill()"/>
+        </div>
+        <div class="canv">
+    <p>rektangel med SVG</p>
+    <svg  id="svg_rektangel">
+            <rect id="rect" width="100" height="50" x="50" y="25" style="fill:white;stroke-width:8;stroke:blue " />
+    </svg>
+    <p>velg farge til rektangel</p>
+    <p>klikk knappen</p>
+    <select name="" id="chooseColorsRect">
+        <option value="green">grønn</option>    
+        <option value="blue">blå</option>    
+        <option value="red">rød</option>    
+        <option value="yellow">gul</option>    
+    </select>
+    <input type="button" value="Change Colors" onclick="changeFillrect()"/>
+        </div>
+    </div>
+    
+    <div>
+        <div class="canv">
+    <p>Drav rektangel med SVG</p>
+  
+    <svg id="svg_rektangel1">
+            <rect id="draw" width="100" height="50" x="50" y="25" stroke="green" stroke-width="4" fill="yellow"  />
+    </svg>
+    
+    <button style="margin-bottom:100px ;" onclick="hidenshow()">drav circle</button>
+</div>
+<div class="canv">
+    <p>Drav sirkel med SVG</p>
+  
+    <svg  id="svg_sirkel1" >
+        <circle id="sirk" cx="100" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    
+    <button style="margin-bottom:100px ;" onclick="hidenshowSirkel()">drav circle</button>
+</div>
+    </div>
+
+    <script src="figures.js"></script>
+</body>
+</html>
